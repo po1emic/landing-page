@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  h2 {
+    @apply font-montserrat text-[22px] font-light uppercase tracking-[0.3em] tablet:text-[30px] desktop:text-[40px];
+  }
+}
+
+@layer components {
+  .container {
+    @apply min-w-full px-[20px] tablet:mx-auto tablet:min-w-0 tablet:max-w-[86%] tablet:px-0 desktop:max-w-[1180px];
+  }
+
+  .button {
+    @apply flex h-[50px] w-fit select-none items-center bg-[#222222] px-12 font-montserrat text-sm uppercase tracking-[0.15em] text-[#ffffff] tablet:h-[60px];
+  }
+
+  .display {
+    @apply text-[30px] font-bold uppercase leading-[30px] tracking-[0.6em] tablet:text-[50px] tablet:leading-[50px] desktop:text-[90px] desktop:leading-[90px];
+  }
+
+  .body {
+    @apply font-montserrat text-sm leading-[22px] text-[#666666] tablet:text-base tablet:leading-[26px];
+  }
+
+  #menu-button {
+    @apply absolute h-6 w-6 cursor-pointer;
+  }
+}
+
+.menu-body {
+  overflow-x: hidden;
+  overflow: hidden;
+  transition: 0.4s ease-out;
+}
+
+#menu-button::before,
+#menu-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+
+#menu-button::before {
+  top: 20%;
+}
+
+#menu-button span {
+  top: 50%;
+  transform: translateY(-50%);
+
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.menu-active {
+  pointer-events: all;
+}
+
+.menu-active #menu-overlay {
+  opacity: 1;
+  transition: 0.4s ease-out;
+}
+
+.menu-active #menu-sidebar {
+  transform: translateX(0%);
+  transition: 0.4s ease-out;
+}

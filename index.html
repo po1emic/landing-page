@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Максим Браун | Фотограф</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <div
+      class="pointer-events-none absolute left-0 top-0 z-[200] h-screen w-screen"
+      id="menu-frame"
+    >
+      <div
+        id="menu-overlay"
+        class="absolute left-0 top-0 z-[100] h-full w-full bg-black/80 opacity-0"
+      ></div>
+      <aside
+        id="menu-sidebar"
+        class="absolute left-0 top-0 z-[220] h-full w-full translate-x-[-100%] bg-white tablet:max-w-[400px]"
+      >
+        <div class="relative flex h-full flex-col items-center justify-center">
+          <ul id="menu-list" class="flex flex-col items-center gap-y-[30px]">
+            <li>
+              <a
+                class="menu-link font-montserrat text-[20px] leading-[20px]"
+                href="#about"
+                >Обо мне</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-link font-montserrat text-[20px] leading-[20px]"
+                href="#portfolio"
+                >Портфолио</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-link font-montserrat text-[20px] leading-[20px]"
+                href="#reviews"
+                >Отзывы</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-link font-montserrat text-[20px] leading-[20px]"
+                href="#price"
+                >Стоимость</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mb-[53px] mt-[73px] flex gap-x-[30px]">
+            <li>
+              <a href="#"><img src="/icons/instagram.svg" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/icons/vk.svg" alt="vk" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/icons/telegram.svg" alt="telegram" /></a>
+            </li>
+          </ul>
+
+          <button id="menu-close" class="cursor-pointer">
+            <img
+              class="absolute right-[20px] top-[20px]"
+              src="./public/icons/cross.svg"
+              alt="cross"
+            />
+          </button>
+
+          <a class="button" href="#">Записаться</a>
+        </div>
+      </aside>
+    </div>
+
+    <header
+      class="sticky z-50 flex w-full items-center bg-[#f4f4f4] py-7 desktop:absolute desktop:bg-transparent desktop:py-14"
+    >
+      <div id="menu-button" class="left-16">
+        <span></span>
+      </div>
+
+      <div
+        class="mx-auto flex w-full max-w-[1180px] justify-center gap-[24%] desktop:justify-start"
+      >
+        <a href="#">
+          <img
+            class="h-[33px] desktop:h-[44px]"
+            src="/icons/logo.svg"
+            alt="logo"
+          />
+        </a>
+
+        <div class="hidden items-center gap-6 desktop:flex">
+          <a href="#">
+            <img class="h-6 w-6" src="/icons/instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img class="h-6 w-6" src="/icons/vk.svg" alt="vk" />
+          </a>
+          <a href="#">
+            <img class="h-6 w-6" src="/icons/telegram.svg" alt="telegram" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative desktop:grid desktop:h-screen desktop:grid-cols-2">
+      <!-- prettier-ignore -->
+      <div
+          class="
+            z-10
+            bg-[#f4f4f4]
+            desktop:p-0
+            desktop:m-0
+            py-10
+            tablet:py-16
+            tablet:pb-[calc(425px+4rem)]
+            tablet:mb-[-425px]
+          ">
+          <div
+            class="
+              max-w-[1180px]
+              w-full
+              mx-auto
+              px-[20px]
+              tablet:px-0
+              
+              desktop:absolute
+              desktop:top-1/2
+              desktop:left-1/2
+              desktop:-translate-x-1/2
+              desktop:-translate-y-1/2
+              
+              flex
+              flex-col
+              items-center
+              desktop:items-start
+              gap-y-3
+              tablet:gap-y-7
+              desktop:gap-y-8
+            ">
+            <span class="text-base leading-[24px] tablet:leading-[40px] desktop:leading-[50px] tracking-[0.3em] font-montserrat font-light tablet:text-[30px] desktop:text-[40px] inline-block desktop:max-w-96 uppercase">
+              Максим Браун
+            </span>
+
+            <div class="space-y-[5px] tablet:space-y-[10px] desktop:space-y-[14px]">
+              <span class="display">Фотограф</span>
+
+              <div>
+                <span class="display desktop:mr-[62px] text-[14px] leading-[30px] tablet:text-[30px] tablet:leading-[50px] desktop:text-[40px] desktop:leading-[90px]">в</span>
+                <span class="display">Москве</span>
+              </div>
+            </div>
+
+            <p class="text-[14px] tablet:text-[16px] leading-[22px] tablet:leading-[26px] desktop:leading-[28px] desktop:text-[18px] font-prata text-center desktop:text-start inline-block max-w-[380px]">
+              Нестандартные фотографии, которые помогут вам выделиться из толпы
+            </p>
+            <a href="#" class="button">Записаться</a>
+          </div>
+        </div>
+
+      <div class="mx-auto h-full overflow-hidden tablet:w-[86%] desktop:w-full">
+        <img
+          class="w-full object-cover desktop:h-full"
+          src="/images/img1.png"
+          alt="portrait"
+        />
+      </div>
+    </section>
+
+    <div
+      class="mt-[50px] flex flex-col items-center gap-y-[50px] tablet:mt-[70px] tablet:gap-y-[70px] desktop:mt-[130px] desktop:gap-y-[130px]"
+    >
+      <div id="about" class="container">
+        <p
+          class="desktop-[24px] text-center font-prata text-sm leading-[22px] tablet:text-[20px] tablet:leading-[30px] desktop:leading-[34px]"
+        >
+          Услуги профессионального фотографа, привлечение к съемкам лучших
+          специалистов. Решение творческих и организационных задач любой
+          сложности. Создание рекламных фотографий и выразительных портретов.
+          Профессиональная работа в студии и на выезде.
+        </p>
+      </div>
+
+      <section class="container">
+        <div class="space-y-[75px]">
+          <img src="/images/img2.png" alt="" />
+
+          <div
+            class="grid grid-cols-2 gap-5 tablet:grid-cols-3 tablet:gap-16 desktop:grid-cols-6 desktop:gap-5"
+          >
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >9</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                лет опыта фотографии
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >100+</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                портретных съемок
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >12</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                публикаций в журналах
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >25</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                съемок знаменитостей
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >14</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                рекламных компаний
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <span
+                class="text-center font-prata text-[34px] tablet:text-[50px] desktop:text-[60px]"
+                >5</span
+              >
+              <span class="text-center text-sm tracking-[.2rem]">
+                побед в конкурсах
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        class="container space-y-[30px] tablet:space-y-[50px] desktop:space-y-[60px]"
+      >
+        <h2 class="text-center">Портфолио</h2>
+
+        <div class="flex gap-5">
+          <div class="space-y-5">
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-1.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-2.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-3.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-4.png" alt="" />
+            </div>
+          </div>
+          <div class="space-y-5">
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-5.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-6.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-7.png" alt="" />
+            </div>
+            <div class="w-full">
+              <img class="object-cover" src="/images/portfolio-8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="reviews"
+        class="container space-y-[30px] tablet:space-y-[50px] desktop:space-y-[60px]"
+      >
+        <h2 class="text-center">Отзывы</h2>
+
+        <div
+          class="grid grid-cols-1 gap-[24px] tablet:grid-cols-2 tablet:gap-[40px] desktop:grid-cols-3 desktop:gap-[60px]"
+        >
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-ekaterina.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Екатерина</span>
+                <span>18 лет</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Я очень очень довольна результатом! Безумна рада что испонилась
+              еще одня моя маленькая мечта))) когда я первый раз увидела твои
+              фото в facebook я даже не могла предположить что попаду в твой
+              объектив
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-kristina.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Кристина</span>
+                <span>25 лет</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Не просто хороший фотограф, но и прекрасный человек, фотографии
+              получились совершенно необычные , он видит людей немного с другой
+              стороны. Спасибо, за проведенное время, было очень весело и
+              приятно с тобой пообщаться
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-regina.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Регина</span>
+                <span>23 года</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Встретившись, я была удивлена его подходом. Он пытается
+              разговорить человека, понять его и раскрыть. Очень комфортный в
+              общении, улавливает твое состояние и плавно, незаметно переходит к
+              работе.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-maria.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Мария</span>
+                <span>26 лет</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Большому кораблю, большое плавание! Максим, спасибо за
+              незабываемую фотосессию, за твое видение и терпение. Спасибо, за
+              то, что смог передать настроение и суть.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-aleksandr.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Александр</span>
+                <span>30 лет</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Фотосессия с Максимом была одной из лучших и незабываемых. Он
+              умеет правильно воплотить характер человека в фотографии. Очень
+              легко было работать!
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="/images/reviews-stefania.png" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <span>Стефания</span>
+                <span>19 лет</span>
+              </div>
+            </div>
+
+            <p class="body">
+              Ваш почерк для меня - это магия и мистика. Вы - гений. Гений
+              места, гений изгибов и смыслов. Я счастлива, что ваш талант
+              прикоснулся ко мне.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- prettier-ignore -->
+      <section
+      id="price"
+        class="
+          relative
+          flex
+          h-fit
+          flex-col-reverse
+          desktop:grid
+          desktop:h-[760px]
+          desktop:grid-cols-2
+          desktop:gap-5
+          desktop:bg-[#f4f4f4]
+        ">
+        <div class="bg-[#f4f4f4] px-5 tablet:pt-[350px] desktop:p-0 desktop:m-0 tablet:mt-[-350px]">
+          <!-- prettier-ignore -->
+          <div
+            class="
+              left-1/2
+              w-full
+              desktop:max-w-[1180px]
+              desktop:absolute
+              desktop:top-1/2
+              desktop:-translate-x-1/2
+              desktop:-translate-y-1/2
+              z-10
+              py-14
+              mx-auto
+              space-y-[38px]
+              desktop:space-y-[100px]
+            ">
+            <div class="space-y-[20px] tablet:space-y-[30px] desktop:space-y-[40px]">
+              <h2 class="text-center desktop:text-start">Стоимость</h2>
+              <p class="body text-center desktop:text-start desktop:max-w-[480px]">
+                Стоимость может изменится из-за условий и пожеланий клиента. Для
+                уточнения деталей и финальной стоимости свяжитесь со мной,
+                уточнив в какие даты вам требуется съемка, а так же тип
+                фотосъёмки.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-[2px] tablet:gap-5">
+              <div
+                class="h-[90px] tablet:flex-col tablet:justify-center tablet:gap-8 items-center px-12 tablet:h-[260px] flex flex-row-reverse desktop:max-w-[280px] bg-white">
+                <img class="h-[50px] w-50px tablet:h-[60px] tablet:w-60px" src="/icons/camera.svg" alt="" />
+                <div class="flex flex-col tablet:gap-5 w-full">
+                  <span class="font-montserrat uppercase font-semibold tracking-[0.1em] tablet:text-center leading-[18px] tablet:leading-[22px] text-[12px] tablet:text-[14px]">Съемка портретов</span>
+                  <span class="text-[18px] font-prata leading-[24px] tablet:leading-[32px] tablet:text-center tablet:text-[24px]">50 000 ₽</span>
+                </div>
+              </div>
+
+              <div
+                class="h-[90px] tablet:flex-col tablet:justify-center tablet:gap-8 items-center px-12 tablet:h-[260px] flex flex-row-reverse desktop:max-w-[280px] bg-white">
+                <img class="h-[50px] w-50px tablet:h-[60px] tablet:w-60px" src="/icons/building.svg" alt="" />
+                <div class="flex flex-col tablet:gap-5 w-full">
+                  <span class="font-montserrat uppercase font-semibold tracking-[0.1em] tablet:text-center leading-[18px] tablet:leading-[22px] text-[12px] tablet:text-[14px]">Аренда студии</span>
+                  <span class="text-[18px] font-prata leading-[24px] tablet:leading-[32px] tablet:text-center tablet:text-[24px]">1 000 ₽ /час</span>
+                </div>
+              </div>
+              
+              <div
+                class="h-[90px] tablet:flex-col tablet:justify-center tablet:gap-8 items-center px-12 tablet:h-[260px] flex flex-row-reverse desktop:max-w-[280px] bg-white">
+                <img class="h-[50px] w-50px tablet:h-[60px] tablet:w-60px" src="/icons/bag.svg" alt="" />
+                <div class="flex flex-col tablet:gap-5 w-full">
+                  <span class="font-montserrat uppercase font-semibold tracking-[0.1em] tablet:text-center leading-[18px] tablet:leading-[22px] text-[12px] tablet:text-[14px]">макияж, прическа</span>
+                  <span class="text-[18px] font-prata leading-[24px] tablet:leading-[32px] tablet:text-center tablet:text-[24px]">5 000 ₽</span>
+                </div>
+              </div>
+
+              <div
+                class="h-[90px] tablet:flex-col tablet:justify-center tablet:gap-8 items-center px-12 tablet:h-[260px] flex flex-row-reverse desktop:max-w-[280px] bg-white">
+                <img class="h-[50px] w-50px tablet:h-[60px] tablet:w-60px" src="/icons/dress.svg" alt="" />
+                <div class="flex flex-col tablet:gap-5 w-full">
+                  <span class="font-montserrat uppercase font-semibold tracking-[0.1em] tablet:text-center leading-[18px] tablet:leading-[22px] text-[12px] tablet:text-[14px]">Аренда одежды</span>
+                  <span class="text-[18px] font-prata leading-[24px] tablet:leading-[32px] tablet:text-center tablet:text-[24px]">10 000 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-full desktop:z-0 z-10 desktop:m-0 overflow-hidden">
+          <img
+            class="mx-auto h-full w-full object-cover tablet:w-[86%] desktop:w-full"
+            src="/images/img3.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+
+    <footer class="flex h-[140px] items-center">
+      <div
+        class="mx-auto flex w-full max-w-[1180px] flex-col items-center gap-[10px] text-[12px] desktop:grid desktop:grid-cols-4"
+      >
+        <span class="text-[#999999]">© Фотограф Максим Браун 2022</span>
+        <a class="text-[#999999]" href="#">Политика конфиденциальности</a>
+        <a
+          href="https://www.web-canape.ru/"
+          class="col-start-4 justify-self-end text-[#999999]"
+        >
+          Разработка и маркетинг WebCanape
+        </a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/index.js"></script>
+  </body>
+</html>
